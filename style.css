@@ -1,0 +1,119 @@
+body {
+    font-family: Sans-Serif;
+    line-height: 1.4;
+    background: rgb(2,102,85);
+    background: linear-gradient(131deg, rgba(2,102,85,1) 0%, rgba(47,97,97,1) 58%, rgba(56,90,94,1) 100%);
+}
+
+#container {
+    position: relative;
+    width: 55%;
+    box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
+    padding: 80px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: white;
+    /* From https://css.glass */
+
+    background: rgba(255, 255, 255, 0.33);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 1px solid rgba(255, 255, 255, 0.49);
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+#name-address > p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+picture > img{
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+#profile {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1.5;
+
+}
+
+#degrees-passing {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+section > strong {
+    border-bottom: 2px solid #fdfbfb; 
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 5px; 
+    font-size: 15px;
+}
+
+#academic-projects > p {
+    text-align: justify;
+}
+
+#academic-projects > strong {
+    border-bottom: 2px solid #fcf9f9; 
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 5px; 
+    margin-bottom: 15px;
+}
+
+#cert-link_durations {
+    display: flex;
+    justify-content: space-between;
+}
+
+#thesis {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(212, 210, 210);
+}
+
+
+section {
+    transition: transform .2s;
+}
+
+section:hover {
+    box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
+    width: 2 em;
+}
+
+
+@media (max-width:600px) {
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #container {
+        width: auto;
+        padding: 50px;
+    }
+
+    #degrees {
+        width: 50%;
+    }
+}
